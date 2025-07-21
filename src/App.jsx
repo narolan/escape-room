@@ -10,15 +10,8 @@ function App() {
     let data = null;
 
     useEffect(() => {
-        const saved = localStorage.getItem("escapeRoomData");
-        if (!saved) {
-            return;
-        }
-
-        data = JSON.parse(saved);
+        data = JSON.parse(localStorage.getItem("escapeRoomData"));
     }, []);
-
-    localStorage.getItem("escapeRoomData")
 
     return (
         <>
