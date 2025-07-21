@@ -13,6 +13,8 @@ function App() {
         data = JSON.parse(localStorage.getItem("escapeRoomData"));
     }, []);
 
+    console.log(data)
+
     return (
         <>
             <div className="background-overlay"></div>
