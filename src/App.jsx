@@ -3,17 +3,10 @@ import {BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom
 import AdminPage from "./pages/AdminPage.jsx";
 import OverviewPage from "./pages/OverviewPage.jsx";
 import GroupPage from "./pages/GroupPage.jsx";
-import {useEffect} from "react";
 
 function App() {
 
-    let data = null;
-
-    useEffect(() => {
-        data = JSON.parse(localStorage.getItem("escapeRoomData"));
-    }, []);
-
-    console.log(data)
+    let data = JSON.parse(localStorage.getItem("escapeRoomData"));
 
     return (
         <>
